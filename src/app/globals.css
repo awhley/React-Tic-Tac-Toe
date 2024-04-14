@@ -1,21 +1,50 @@
 body {
     margin: 10px;
+    background-color: #005792;
+    display: flex;
+    justify-content: center;
 }
 
 .square {
     background: #FFF;
-    border: 1px solid #999;
+    border: 4px solid #E68523;
     float: left;
-    font-size: 24px;
+    font-size: 96px;
     font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
+    line-height: 136px;
+    height: 136px;
+    margin-right: -4px;
+    margin-top: -4px;
     text-align: center;
-    width: 34px;
+    width: 136px;
 }
 
 .board-row {
     display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #E68523;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+}
+
+p, .game-info, .game-buttons {
+    color: #E68523;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: #005792;
+    background-color: #FFFFF;
+    border: 1.5px solid #E68523;
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
 }

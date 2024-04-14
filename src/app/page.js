@@ -92,19 +92,28 @@ export default function Game() {
       description = "Go to game start";
     }
     return (
-      <li key={move + Math.random()}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
-      </li>
+      <div className="game-buttons">
+        <li key={move + Math.random()}>
+          <button onClick={() => jumpTo(move)}>{description}</button>
+        </li>
+      </div>
     );
   });
 
   return (
-    <div className="game">
-      <div className="game-board">
-        <Board squares={currentSquares} xIsNext={xIsNext} onPlay={handlePlay} />
-      </div>
-      <div className="game-info">
-        <ol>{moves}</ol>
+    <div>
+      <h1>Tic-Tac-Toe</h1>
+      <div className="game">
+        <div className="game-board">
+          <Board
+            squares={currentSquares}
+            xIsNext={xIsNext}
+            onPlay={handlePlay}
+          />
+        </div>
+        <div className="game-info">
+          <ol>{moves}</ol>
+        </div>
       </div>
     </div>
   );
